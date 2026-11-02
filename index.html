@@ -7,78 +7,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Slabo+27px&display=swap"
             rel="stylesheet"
         />
         <link href="style.css" rel="stylesheet" />
-
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                max-width: 900px;
-                margin: 2rem auto;
-            }
-            svg {
-                width: 100%;
-            }
-
-            /* --- Estructura del gráfico --- */
-            .grid {
-                fill: none;
-                stroke: #ddd;
-            }
-            .eje {
-                stroke: #aaa;
-            }
-            .texto {
-                font-size: 12px;
-                text-anchor: middle;
-            }
-
-            /* --- Polígonos: lo común va en .area, el color en cada clase --- */
-            .area {
-                fill-opacity: 0.2;
-                stroke-width: 2;
-            }
-            .area:hover {
-                fill-opacity: 0.5;
-            }
-
-            .puc {
-                fill: #fec60d;
-                stroke: #fec60d;
-            }
-            .uch {
-                fill: #1f5592;
-                stroke: #1f5592;
-            }
-            .udec {
-                fill: #2ca02c;
-                stroke: #2ca02c;
-            }
-            .usach {
-                fill: #d62728;
-                stroke: #d62728;
-            }
-
-            /* --- Leyenda --- */
-            .item {
-                cursor: pointer;
-                font-size: 12px;
-            }
-            .item rect {
-                width: 14px;
-                height: 14px;
-            }
-
-            /* --- Estados que activa el JavaScript --- */
-            .nones {
-                display: none;
-            }
-            .apagado {
-                opacity: 0.3;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
@@ -86,7 +18,7 @@
 
             <h2>Las mejores escuelas del mundo en Arte y Diseño</h2>
 
-            <h5>Por <a href="https://github.com/evorakie">Sayen Padilla </a></h5>
+            <h5>Por <a href="https://github.com/evorakie">Sayen Padilla</a></h5>
 
             <h6>
                 <time datetime="2026-10-09T17:00-03:00"
@@ -140,21 +72,13 @@
                     puesto 9, confirmando que la élite del ranking no se limita al Reino Unido.
                 </li>
                 <li>
-                    <em>Escasa representación chilena y desigualdad de visibilidad:</em> Solo tres instituciones
-                    chilenas — la
-                    <a href="https://www.uc.cl/" target="_blank" rel="noopener"
-                        >Pontificia Universidad Católica de Chile (PUC)</a
-                    >, la
-                    <a href="https://www.udd.cl/" target="_blank" rel="noopener">Universidad del Desarrollo (UDD)</a> y
-                    la <a href="https://uchile.cl/" target="_blank" rel="noopener">Universidad de Chile (UCH)</a> —
-                    figuran en la medición de Arte y Diseño del Ranking QS 2026. Esta presencia acotada adquiere otra
-                    dimensión al observar la distribución internacional: mientras Latinoamérica, como región, reúne 24
-                    instituciones de seis países, el Reino Unido concentra 34. Más allá de la diferencia numérica, esta
-                    comparación permite cuestionar cómo las categorías geográficas y los criterios de clasificación
-                    condicionan la interpretación del ranking. Mientras el Reino Unido se presenta como una unidad,
-                    Latinoamérica se desglosa en distintos países, una diferencia en la forma de agrupar los datos que
-                    influye en cómo se percibe la presencia y relevancia académica de cada región y de los países que la
-                    componen.
+                    <em>La escasa representación chilena:</em> Solo 3 instituciones chilenas figuran en la medición
+                    internacional de Arte y Diseño (PUC, UDD, UCH), frente a las 24 instituciones de 6 países
+                    latinoamericanos y las 34 del Reino Unido. Esta diferencia evidencia la limitada presencia de Chile
+                    en los rankings internacionales y plantea interrogantes sobre la visibilidad y el reconocimiento del
+                    desarrollo artístico y académico nacional. Más allá de las cifras, la representación en estas
+                    mediciones influye en qué territorios adquieren mayor proyección internacional, dejando en evidencia
+                    las desigualdades de visibilidad entre regiones.
                 </li>
                 <li>
                     <em>Metodología basada en reputación:</em> A diferencia de otras disciplinas del Ranking
@@ -270,12 +194,11 @@
                 verificarse cada año, así como el resultado del Ranking QS.
             </div>
 
-            <h3>¿Y el otro Gráfico?</h3>
-            <p>Acá un texto ingenioso.</p>
+            <h3>¿Y el otro gráico?</h3>
+            <p>blalbla importante</p>
 
-            <h3>¿Y el ranking de las Universidades?</h3>
-            <p>Acá un texto ingenioso.</p>
-
+            <h3>¿Y el rankig de las universidades?</h3>
+            <p>Añadir un texto ingenioso</p>
             <svg viewBox="0 0 880 580">
                 <!-- Todo el radar se dibuja con el centro en (0,0) y luego se mueve -->
                 <g transform="translate(300 300)">
@@ -404,11 +327,10 @@
         <script>
             // Agrega o quita una clase CSS: el JS solo cambia clases, el CSS decide cómo se ve
             function alternar(id, item) {
-                document.getElementById(id).classList.toggle("nones");
+                document.getElementById(id).classList.toggle("no");
                 item.classList.toggle("apagado");
             }
         </script>
-
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
             new Chart(document.getElementById("identidad"), {
